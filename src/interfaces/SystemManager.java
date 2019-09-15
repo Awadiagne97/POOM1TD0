@@ -1,4 +1,4 @@
 package interfaces;
 
-public class SystemManager {
+public interface SystemManager {
 }
