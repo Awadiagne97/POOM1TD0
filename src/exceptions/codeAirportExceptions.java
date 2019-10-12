@@ -9,7 +9,7 @@ public class codeAirportExceptions extends Exception{
         }
 
         public String toString() {
-            return ("Le code de l'airport ne doit pas depassser 3 ");
+            return ("l'airport avec le code" + codeAirport + "doit etre egale a 3");
         }
 
     }

@@ -1,15 +1,17 @@
 package implementations;
 
-public class Airport {
+public class Airport implements interfaces.AirportIF {
     private String code;
     public Airport(String n) {
         n=code;
     }
+
     
-   
-    
-    public String getName() {
-    	return code;
-    	
+    public String toString(){
+        return this.code;
+    }
+
+    public String getCode() {
+        return this.code;
     }
 }
