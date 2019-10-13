@@ -8,7 +8,7 @@ public class nomCodeAirlineExecptions extends Exception {
 		nomAirline = parNom;
 	}
 	public String toString() {
-		return ("La compagnie aerienne avec le nom" + nomAirline + " ne doit pas depasser 5");
+		return ("La compagnie aerienne avec le nom " + nomAirline + " ne doit pas depasser 5");
 	}
 
 }

@@ -1,5 +1,7 @@
 package implementations;
 
+import java.util.Objects;
+
 public class SeatID {
 	Integer row;
 	char col;
@@ -27,7 +29,21 @@ public class SeatID {
     public String toString(){
         return this.row + " " + this.col;
     }
-	
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof SeatID)) {
+            return false;
+        }
+        SeatID seatID = (SeatID) o;
+        return row == seatID.row && col == seatID.col;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(row, col);
+    }
 	
 
 }
